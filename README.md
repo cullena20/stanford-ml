@@ -6,4 +6,5 @@ have not gone through yet are just templates.
 
 ## Progress
 * Completed Week 1 and Week 2 + all coding problems (ex1) - 1/12/21
-* Beginning Week 2 (Logistic Regression)
+* Completed Week 3 coding problems (not sure date)
+* Working on Week 4 coding problems
