@@ -29,7 +29,13 @@ sigma = zeros(1, size(X, 2));
 mu = mean(X);              % returns a row vector
 sigma = std(X);            % returns a row vector
 
-X_norm = (X - mu) ./ sigma;
+for i = 1:size(X, 2)
+    if sigma(:, i) == 0
+        X_norm(:, i) = (X(:, i) - mu(:, i));
+    else
+        X_norm(:, i) = (X(:, i) - mu(:, i)) ./ sigma(:, i);
+    end
+end
 
 % ============================================================
 
