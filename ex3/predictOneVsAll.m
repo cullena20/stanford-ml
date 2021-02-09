@@ -30,7 +30,12 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
-
+% X is training examples * 400 features per ex
+% all_theta is 10 classifiers * 401 theta per classifier
+prob = X * all_theta';
+% prob return training examples * 10 probabilities
+[~, p] = max(prob, [], 2);
+% max returns matrix of training examples * highest value / index per row
 
 
 
